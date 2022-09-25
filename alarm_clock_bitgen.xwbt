@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Asus\Desktop\projet fpga\TP4_alarm_clock_tocomplete\alarm_clock.ncd
+OUTFILE=C:\Users\Asus\Desktop\projet fpga\TP4_alarm_clock_tocomplete\alarm_clock.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Asus\Desktop\projet fpga\TP4_alarm_clock_tocomplete
+LICENSE=WebPack
+USER_INFO=__0_0_0

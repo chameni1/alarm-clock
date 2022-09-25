@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6
+# Build 269223 by xbuild on Wed Jun  5 11:17:50 MDT 2013
+# Start of session at: Wed Jan 15 13:48:05 2014
+# Process ID: 5064
+# Log file: D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/planAhead_run_1/planAhead.log
+# Journal file: D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

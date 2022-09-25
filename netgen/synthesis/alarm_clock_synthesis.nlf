@@ -1,0 +1,19 @@
+Release 14.6 - netgen P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm alarm_clock -w -dir
+netgen/synthesis -ofmt vhdl -sim alarm_clock.ngc alarm_clock_synthesis.vhd  
+
+Reading design 'alarm_clock.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist 'C:\Users\Asus\Desktop\projet
+fpga\TP4_alarm_clock_tocomplete\netgen\synthesis\alarm_clock_synthesis.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 4391252 kilobytes

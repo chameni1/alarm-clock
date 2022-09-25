@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Wed Apr 12 16:48:00 2017
+# Process ID: 444
+# Log file: C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/pa.fromNetlist.tcl}

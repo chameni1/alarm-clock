@@ -1,0 +1,712 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr
+alarm_clock.pcf -ucf alarm_clock.ucf
+
+Design file:              alarm_clock.ncd
+Physical constraint file: alarm_clock.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_CLOCK = PERIOD TIMEGRP "CLOCK" 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 25940 paths analyzed, 549 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.187ns.
+--------------------------------------------------------------------------------
+
+Paths for end point PULSEgEN/ONE_MINUTE (SLICE_X20Y19.C3), 351 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.813ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PULSEgEN/counter_1 (FF)
+  Destination:          PULSEgEN/ONE_MINUTE (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.129ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.023ns (0.338 - 0.361)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: PULSEgEN/counter_1 to PULSEgEN/ONE_MINUTE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y17.BQ      Tcko                  0.391   PULSEgEN/counter<3>
+                                                       PULSEgEN/counter_1
+    SLICE_X14Y17.B1      net (fanout=1)        0.626   PULSEgEN/counter<1>
+    SLICE_X14Y17.COUT    Topcyb                0.380   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<3>
+                                                       PULSEgEN/counter<1>_rt
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<3>
+    SLICE_X14Y18.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<3>
+    SLICE_X14Y18.COUT    Tbyp                  0.076   PULSEgEN/counter<7>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<7>
+    SLICE_X14Y19.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<7>
+    SLICE_X14Y19.COUT    Tbyp                  0.076   PULSEgEN/counter<11>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<11>
+    SLICE_X14Y20.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<11>
+    SLICE_X14Y20.COUT    Tbyp                  0.076   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<15>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<15>
+    SLICE_X14Y21.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<15>
+    SLICE_X14Y21.BMUX    Tcinb                 0.292   PULSEgEN/counter<18>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<19>
+    SLICE_X15Y21.C2      net (fanout=2)        1.060   PULSEgEN/counter[25]_GND_8_o_add_0_OUT<17>
+    SLICE_X15Y21.C       Tilo                  0.259   PULSEgEN/HALF_SECOND
+                                                       PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>3
+    SLICE_X16Y21.A6      net (fanout=2)        0.310   PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>2
+    SLICE_X16Y21.A       Tilo                  0.205   PULSEgEN/counter<25>
+                                                       PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>6_1
+    SLICE_X20Y19.C3      net (fanout=13)       1.025   PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>6
+    SLICE_X20Y19.CLK     Tas                   0.341   PULSEgEN/ONE_MINUTE
+                                                       PULSEgEN/PWR_8_o_i[6]_equal_6_o<6>
+                                                       PULSEgEN/ONE_MINUTE
+    -------------------------------------------------  ---------------------------
+    Total                                      5.129ns (2.096ns logic, 3.033ns route)
+                                                       (40.9% logic, 59.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.843ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PULSEgEN/counter_0 (FF)
+  Destination:          PULSEgEN/ONE_MINUTE (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.099ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.023ns (0.338 - 0.361)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: PULSEgEN/counter_0 to PULSEgEN/ONE_MINUTE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y17.AQ      Tcko                  0.391   PULSEgEN/counter<3>
+                                                       PULSEgEN/counter_0
+    SLICE_X14Y17.A2      net (fanout=1)        0.597   PULSEgEN/counter<0>
+    SLICE_X14Y17.COUT    Topcya                0.379   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<3>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_lut<0>_INV_0
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<3>
+    SLICE_X14Y18.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<3>
+    SLICE_X14Y18.COUT    Tbyp                  0.076   PULSEgEN/counter<7>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<7>
+    SLICE_X14Y19.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<7>
+    SLICE_X14Y19.COUT    Tbyp                  0.076   PULSEgEN/counter<11>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<11>
+    SLICE_X14Y20.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<11>
+    SLICE_X14Y20.COUT    Tbyp                  0.076   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<15>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<15>
+    SLICE_X14Y21.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<15>
+    SLICE_X14Y21.BMUX    Tcinb                 0.292   PULSEgEN/counter<18>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<19>
+    SLICE_X15Y21.C2      net (fanout=2)        1.060   PULSEgEN/counter[25]_GND_8_o_add_0_OUT<17>
+    SLICE_X15Y21.C       Tilo                  0.259   PULSEgEN/HALF_SECOND
+                                                       PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>3
+    SLICE_X16Y21.A6      net (fanout=2)        0.310   PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>2
+    SLICE_X16Y21.A       Tilo                  0.205   PULSEgEN/counter<25>
+                                                       PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>6_1
+    SLICE_X20Y19.C3      net (fanout=13)       1.025   PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>6
+    SLICE_X20Y19.CLK     Tas                   0.341   PULSEgEN/ONE_MINUTE
+                                                       PULSEgEN/PWR_8_o_i[6]_equal_6_o<6>
+                                                       PULSEgEN/ONE_MINUTE
+    -------------------------------------------------  ---------------------------
+    Total                                      5.099ns (2.095ns logic, 3.004ns route)
+                                                       (41.1% logic, 58.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.894ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PULSEgEN/counter_5 (FF)
+  Destination:          PULSEgEN/ONE_MINUTE (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.050ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.021ns (0.338 - 0.359)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: PULSEgEN/counter_5 to PULSEgEN/ONE_MINUTE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y18.BQ      Tcko                  0.391   PULSEgEN/counter<6>
+                                                       PULSEgEN/counter_5
+    SLICE_X14Y18.B1      net (fanout=1)        0.626   PULSEgEN/counter<5>
+    SLICE_X14Y18.COUT    Topcyb                0.380   PULSEgEN/counter<7>
+                                                       PULSEgEN/counter<5>_rt
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<7>
+    SLICE_X14Y19.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<7>
+    SLICE_X14Y19.COUT    Tbyp                  0.076   PULSEgEN/counter<11>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<11>
+    SLICE_X14Y20.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<11>
+    SLICE_X14Y20.COUT    Tbyp                  0.076   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<15>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<15>
+    SLICE_X14Y21.CIN     net (fanout=1)        0.003   PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<15>
+    SLICE_X14Y21.BMUX    Tcinb                 0.292   PULSEgEN/counter<18>
+                                                       PULSEgEN/Madd_counter[25]_GND_8_o_add_0_OUT_cy<19>
+    SLICE_X15Y21.C2      net (fanout=2)        1.060   PULSEgEN/counter[25]_GND_8_o_add_0_OUT<17>
+    SLICE_X15Y21.C       Tilo                  0.259   PULSEgEN/HALF_SECOND
+                                                       PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>3
+    SLICE_X16Y21.A6      net (fanout=2)        0.310   PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>2
+    SLICE_X16Y21.A       Tilo                  0.205   PULSEgEN/counter<25>
+                                                       PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>6_1
+    SLICE_X20Y19.C3      net (fanout=13)       1.025   PULSEgEN/PWR_8_o_counter[25]_equal_2_o<25>6
+    SLICE_X20Y19.CLK     Tas                   0.341   PULSEgEN/ONE_MINUTE
+                                                       PULSEgEN/PWR_8_o_i[6]_equal_6_o<6>
+                                                       PULSEgEN/ONE_MINUTE
+    -------------------------------------------------  ---------------------------
+    Total                                      5.050ns (2.020ns logic, 3.030ns route)
+                                                       (40.0% logic, 60.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Nexys3A/i_2 (SLICE_X30Y30.C3), 378 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.848ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Nexys3A/i_3 (FF)
+  Destination:          Nexys3A/i_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.117ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Nexys3A/i_3 to Nexys3A/i_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y30.DQ      Tcko                  0.447   Nexys3A/i<3>
+                                                       Nexys3A/i_3
+    SLICE_X32Y31.D2      net (fanout=2)        0.661   Nexys3A/i<3>
+    SLICE_X32Y31.COUT    Topcyd                0.260   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+                                                       Nexys3A/i<3>_rt
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.CIN     net (fanout=1)        0.108   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CMUX    Tcinc                 0.272   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_xor<26>
+    SLICE_X33Y33.A6      net (fanout=2)        0.533   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+    SLICE_X33Y33.A       Tilo                  0.259   Nexys3A/_n00495
+                                                       Nexys3A/_n00491
+    SLICE_X31Y34.A3      net (fanout=2)        0.877   Nexys3A/_n00492
+    SLICE_X31Y34.A       Tilo                  0.259   Nexys3A/i<14>
+                                                       Nexys3A/_n00497_1
+    SLICE_X30Y30.C3      net (fanout=13)       0.757   Nexys3A/_n004971
+    SLICE_X30Y30.CLK     Tas                   0.289   Nexys3A/i<3>
+                                                       Nexys3A/i_2_rstpot
+                                                       Nexys3A/i_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.117ns (2.166ns logic, 2.951ns route)
+                                                       (42.3% logic, 57.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.853ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Nexys3A/i_0 (FF)
+  Destination:          Nexys3A/i_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.112ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Nexys3A/i_0 to Nexys3A/i_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y30.AQ      Tcko                  0.447   Nexys3A/i<3>
+                                                       Nexys3A/i_0
+    SLICE_X32Y31.A5      net (fanout=2)        0.521   Nexys3A/i<0>
+    SLICE_X32Y31.COUT    Topcya                0.395   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_lut<0>_INV_0
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.CIN     net (fanout=1)        0.108   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CMUX    Tcinc                 0.272   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_xor<26>
+    SLICE_X33Y33.A6      net (fanout=2)        0.533   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+    SLICE_X33Y33.A       Tilo                  0.259   Nexys3A/_n00495
+                                                       Nexys3A/_n00491
+    SLICE_X31Y34.A3      net (fanout=2)        0.877   Nexys3A/_n00492
+    SLICE_X31Y34.A       Tilo                  0.259   Nexys3A/i<14>
+                                                       Nexys3A/_n00497_1
+    SLICE_X30Y30.C3      net (fanout=13)       0.757   Nexys3A/_n004971
+    SLICE_X30Y30.CLK     Tas                   0.289   Nexys3A/i<3>
+                                                       Nexys3A/i_2_rstpot
+                                                       Nexys3A/i_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.112ns (2.301ns logic, 2.811ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.987ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Nexys3A/i_1 (FF)
+  Destination:          Nexys3A/i_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.978ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Nexys3A/i_1 to Nexys3A/i_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y30.BQ      Tcko                  0.447   Nexys3A/i<3>
+                                                       Nexys3A/i_1
+    SLICE_X32Y31.B5      net (fanout=2)        0.407   Nexys3A/i<1>
+    SLICE_X32Y31.COUT    Topcyb                0.375   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+                                                       Nexys3A/i<1>_rt
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.CIN     net (fanout=1)        0.108   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CMUX    Tcinc                 0.272   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_xor<26>
+    SLICE_X33Y33.A6      net (fanout=2)        0.533   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+    SLICE_X33Y33.A       Tilo                  0.259   Nexys3A/_n00495
+                                                       Nexys3A/_n00491
+    SLICE_X31Y34.A3      net (fanout=2)        0.877   Nexys3A/_n00492
+    SLICE_X31Y34.A       Tilo                  0.259   Nexys3A/i<14>
+                                                       Nexys3A/_n00497_1
+    SLICE_X30Y30.C3      net (fanout=13)       0.757   Nexys3A/_n004971
+    SLICE_X30Y30.CLK     Tas                   0.289   Nexys3A/i<3>
+                                                       Nexys3A/i_2_rstpot
+                                                       Nexys3A/i_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.978ns (2.281ns logic, 2.697ns route)
+                                                       (45.8% logic, 54.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Nexys3A/i_11 (SLICE_X33Y32.D4), 378 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.886ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Nexys3A/i_3 (FF)
+  Destination:          Nexys3A/i_11 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.059ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.020ns (0.464 - 0.484)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Nexys3A/i_3 to Nexys3A/i_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y30.DQ      Tcko                  0.447   Nexys3A/i<3>
+                                                       Nexys3A/i_3
+    SLICE_X32Y31.D2      net (fanout=2)        0.661   Nexys3A/i<3>
+    SLICE_X32Y31.COUT    Topcyd                0.260   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+                                                       Nexys3A/i<3>_rt
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.CIN     net (fanout=1)        0.108   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CMUX    Tcinc                 0.272   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_xor<26>
+    SLICE_X33Y33.A6      net (fanout=2)        0.533   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+    SLICE_X33Y33.A       Tilo                  0.259   Nexys3A/_n00495
+                                                       Nexys3A/_n00491
+    SLICE_X31Y34.A3      net (fanout=2)        0.877   Nexys3A/_n00492
+    SLICE_X31Y34.A       Tilo                  0.259   Nexys3A/i<14>
+                                                       Nexys3A/_n00497_1
+    SLICE_X33Y32.D4      net (fanout=13)       0.666   Nexys3A/_n004971
+    SLICE_X33Y32.CLK     Tas                   0.322   Nexys3A/i<11>
+                                                       Nexys3A/i_11_rstpot
+                                                       Nexys3A/i_11
+    -------------------------------------------------  ---------------------------
+    Total                                      5.059ns (2.199ns logic, 2.860ns route)
+                                                       (43.5% logic, 56.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.891ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Nexys3A/i_0 (FF)
+  Destination:          Nexys3A/i_11 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.054ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.020ns (0.464 - 0.484)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Nexys3A/i_0 to Nexys3A/i_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y30.AQ      Tcko                  0.447   Nexys3A/i<3>
+                                                       Nexys3A/i_0
+    SLICE_X32Y31.A5      net (fanout=2)        0.521   Nexys3A/i<0>
+    SLICE_X32Y31.COUT    Topcya                0.395   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_lut<0>_INV_0
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.CIN     net (fanout=1)        0.108   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CMUX    Tcinc                 0.272   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_xor<26>
+    SLICE_X33Y33.A6      net (fanout=2)        0.533   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+    SLICE_X33Y33.A       Tilo                  0.259   Nexys3A/_n00495
+                                                       Nexys3A/_n00491
+    SLICE_X31Y34.A3      net (fanout=2)        0.877   Nexys3A/_n00492
+    SLICE_X31Y34.A       Tilo                  0.259   Nexys3A/i<14>
+                                                       Nexys3A/_n00497_1
+    SLICE_X33Y32.D4      net (fanout=13)       0.666   Nexys3A/_n004971
+    SLICE_X33Y32.CLK     Tas                   0.322   Nexys3A/i<11>
+                                                       Nexys3A/i_11_rstpot
+                                                       Nexys3A/i_11
+    -------------------------------------------------  ---------------------------
+    Total                                      5.054ns (2.334ns logic, 2.720ns route)
+                                                       (46.2% logic, 53.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.025ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Nexys3A/i_1 (FF)
+  Destination:          Nexys3A/i_11 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.920ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.020ns (0.464 - 0.484)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Nexys3A/i_1 to Nexys3A/i_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y30.BQ      Tcko                  0.447   Nexys3A/i<3>
+                                                       Nexys3A/i_1
+    SLICE_X32Y31.B5      net (fanout=2)        0.407   Nexys3A/i<1>
+    SLICE_X32Y31.COUT    Topcyb                0.375   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+                                                       Nexys3A/i<1>_rt
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.CIN     net (fanout=1)        0.108   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<3>
+    SLICE_X32Y32.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<7>
+    SLICE_X32Y33.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<11>
+    SLICE_X32Y34.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<15>
+    SLICE_X32Y35.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<19>
+    SLICE_X32Y36.COUT    Tbyp                  0.076   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CIN     net (fanout=1)        0.003   Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_cy<23>
+    SLICE_X32Y37.CMUX    Tcinc                 0.272   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+                                                       Nexys3A/Madd_i[26]_GND_16_o_add_7_OUT_xor<26>
+    SLICE_X33Y33.A6      net (fanout=2)        0.533   Nexys3A/i[26]_GND_16_o_add_7_OUT<26>
+    SLICE_X33Y33.A       Tilo                  0.259   Nexys3A/_n00495
+                                                       Nexys3A/_n00491
+    SLICE_X31Y34.A3      net (fanout=2)        0.877   Nexys3A/_n00492
+    SLICE_X31Y34.A       Tilo                  0.259   Nexys3A/i<14>
+                                                       Nexys3A/_n00497_1
+    SLICE_X33Y32.D4      net (fanout=13)       0.666   Nexys3A/_n004971
+    SLICE_X33Y32.CLK     Tas                   0.322   Nexys3A/i<11>
+                                                       Nexys3A/i_11_rstpot
+                                                       Nexys3A/i_11
+    -------------------------------------------------  ---------------------------
+    Total                                      4.920ns (2.314ns logic, 2.606ns route)
+                                                       (47.0% logic, 53.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_CLOCK = PERIOD TIMEGRP "CLOCK" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point PULSEgEN/i_3 (SLICE_X16Y19.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.427ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               PULSEgEN/i_3 (FF)
+  Destination:          PULSEgEN/i_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.427ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLOCK_BUFGP rising at 10.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: PULSEgEN/i_3 to PULSEgEN/i_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y19.DQ      Tcko                  0.200   PULSEgEN/i<3>
+                                                       PULSEgEN/i_3
+    SLICE_X16Y19.D6      net (fanout=5)        0.037   PULSEgEN/i<3>
+    SLICE_X16Y19.CLK     Tah         (-Th)    -0.190   PULSEgEN/i<3>
+                                                       PULSEgEN/Mmux_i[6]_GND_8_o_mux_6_OUT43
+                                                       PULSEgEN/i_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.427ns (0.390ns logic, 0.037ns route)
+                                                       (91.3% logic, 8.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point PULSEgEN/i_0 (SLICE_X16Y19.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.433ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               PULSEgEN/i_0 (FF)
+  Destination:          PULSEgEN/i_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.433ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLOCK_BUFGP rising at 10.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: PULSEgEN/i_0 to PULSEgEN/i_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y19.AQ      Tcko                  0.200   PULSEgEN/i<3>
+                                                       PULSEgEN/i_0
+    SLICE_X16Y19.A6      net (fanout=7)        0.043   PULSEgEN/i<0>
+    SLICE_X16Y19.CLK     Tah         (-Th)    -0.190   PULSEgEN/i<3>
+                                                       PULSEgEN/Mmux_i[6]_GND_8_o_mux_6_OUT11
+                                                       PULSEgEN/i_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.433ns (0.390ns logic, 0.043ns route)
+                                                       (90.1% logic, 9.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point PULSEgEN/i_4 (SLICE_X13Y19.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.446ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               PULSEgEN/i_4 (FF)
+  Destination:          PULSEgEN/i_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.446ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLOCK_BUFGP rising at 10.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: PULSEgEN/i_4 to PULSEgEN/i_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y19.AQ      Tcko                  0.198   PULSEgEN/i<6>
+                                                       PULSEgEN/i_4
+    SLICE_X13Y19.A6      net (fanout=4)        0.033   PULSEgEN/i<4>
+    SLICE_X13Y19.CLK     Tah         (-Th)    -0.215   PULSEgEN/i<6>
+                                                       PULSEgEN/Mmux_i[6]_GND_8_o_mux_6_OUT51
+                                                       PULSEgEN/i_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.446ns (0.413ns logic, 0.033ns route)
+                                                       (92.6% logic, 7.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CLOCK = PERIOD TIMEGRP "CLOCK" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.270ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: CLOCK_BUFGP/BUFG/I0
+  Logical resource: CLOCK_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: CLOCK_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.430ns (2325.581MHz) (Tcp)
+  Physical resource: PULSEgEN/i<3>/CLK
+  Logical resource: PULSEgEN/i_0/CK
+  Location pin: SLICE_X16Y19.CLK
+  Clock network: CLOCK_BUFGP
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.215ns (Trpw)
+  Physical resource: PULSEgEN/i<3>/SR
+  Logical resource: PULSEgEN/i_0/SR
+  Location pin: SLICE_X16Y19.SR
+  Clock network: RESET_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK          |    5.187|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 25940 paths, 0 nets, and 841 connections
+
+Design statistics:
+   Minimum period:   5.187ns{1}   (Maximum frequency: 192.790MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Jun 01 10:19:08 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 175 MB
+
+
+

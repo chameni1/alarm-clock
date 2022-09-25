@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Asus\Desktop\projet fpga\TP4_alarm_clock_tocomplete\impact.xsl
+OUTFILE=C:\Users\Asus\Desktop\projet fpga\TP4_alarm_clock_tocomplete\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\Asus\Desktop\projet fpga\TP4_alarm_clock_tocomplete
+LICENSE=iMPACT
+USER_INFO=iMPACT

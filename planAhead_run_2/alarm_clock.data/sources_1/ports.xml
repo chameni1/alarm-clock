@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="SEL">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="DISP_8SEG">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="AL" Dir="IN"/>
+		<Port Id="HR" Dir="IN"/>
+		<Port Id="MN" Dir="IN"/>
+		<Port Id="ALARM_ON" Dir="IN"/>
+		<Port Id="CLOCK" Dir="IN"/>
+		<Port Id="RESET" Dir="IN"/>
+		<Port Id="SOUND_A" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

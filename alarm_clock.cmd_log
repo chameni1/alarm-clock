@@ -1,0 +1,216 @@
+xst -intstyle ise -ifn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.xst" -ofn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+xst -intstyle ise -ifn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.xst" -ofn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+xst -intstyle ise -ifn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.xst" -ofn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+xst -intstyle ise -ifn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.xst" -ofn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.xst" -ofn "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "K:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "K:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "L:/TPS_APAI/1/alarm_clock/alarm_clock.xst" -ofn "L:/TPS_APAI/1/alarm_clock/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 alarm_clock.ngc alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+xst -intstyle ise -ifn "C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "C:/Users/lenovo/Desktop/TP FPGA/TP1_APAI_imen/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+xst -intstyle ise -ifn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+xst -intstyle ise -ifn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+xst -intstyle ise -ifn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.xst" -ofn "D:/Documents de Ines/Mes Enseignements/TP FPGA 2018/TP3_horloge alarme/TP3_fpga/TP3/alarm_clock_solution/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+xst -intstyle ise -ifn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.xst" -ofn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+netgen -intstyle ise -ar Structure -tm alarm_clock -w -dir netgen/synthesis -ofmt vhdl -sim alarm_clock.ngc alarm_clock_synthesis.vhd 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+xst -intstyle ise -ifn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.xst" -ofn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+xst -intstyle ise -ifn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.xst" -ofn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.syr" 
+netgen -intstyle ise -ar Structure -tm alarm_clock -w -dir netgen/synthesis -ofmt vhdl -sim alarm_clock.ngc alarm_clock_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+xst -intstyle ise -ifn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.xst" -ofn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.syr" 
+netgen -intstyle ise -ar Structure -tm alarm_clock -w -dir netgen/synthesis -ofmt vhdl -sim alarm_clock.ngc alarm_clock_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+xst -intstyle ise -ifn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.xst" -ofn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.syr" 
+xst -intstyle ise -ifn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.xst" -ofn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 
+xst -intstyle ise -ifn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.xst" -ofn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.syr" 
+xst -intstyle ise -ifn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.xst" -ofn "C:/Users/Asus/Desktop/projet fpga/TP4_alarm_clock_tocomplete/alarm_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alarm_clock.ucf -p xc6slx16-csg324-3 "alarm_clock.ngc" alarm_clock.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alarm_clock_map.ncd alarm_clock.ngd alarm_clock.pcf 
+par -w -intstyle ise -ol high -mt off alarm_clock_map.ncd alarm_clock.ncd alarm_clock.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alarm_clock.twx alarm_clock.ncd -o alarm_clock.twr alarm_clock.pcf -ucf alarm_clock.ucf 
+bitgen -intstyle ise -f alarm_clock.ut alarm_clock.ncd 

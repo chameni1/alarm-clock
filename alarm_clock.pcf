@@ -1,0 +1,82 @@
+//! **************************************************************************
+// Written by: Map P.68d on Tue Jun 01 10:18:55 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "AL" LOCATE = SITE "A8" LEVEL 1;
+COMP "HR" LOCATE = SITE "C4" LEVEL 1;
+COMP "MN" LOCATE = SITE "D9" LEVEL 1;
+COMP "SOUND_A" LOCATE = SITE "U16" LEVEL 1;
+COMP "CLOCK" LOCATE = SITE "V10" LEVEL 1;
+COMP "RESET" LOCATE = SITE "T5" LEVEL 1;
+COMP "SEL<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "SEL<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "SEL<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "SEL<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "DISP_8SEG<0>" LOCATE = SITE "L14" LEVEL 1;
+COMP "DISP_8SEG<1>" LOCATE = SITE "N14" LEVEL 1;
+COMP "DISP_8SEG<2>" LOCATE = SITE "M14" LEVEL 1;
+COMP "DISP_8SEG<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "DISP_8SEG<4>" LOCATE = SITE "U17" LEVEL 1;
+COMP "DISP_8SEG<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "DISP_8SEG<6>" LOCATE = SITE "T17" LEVEL 1;
+COMP "DISP_8SEG<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "ALARM_ON" LOCATE = SITE "T10" LEVEL 1;
+TIMEGRP CLOCK = BEL "CONTROLfSM/STATE_FSM_FFd3" BEL
+        "CONTROLfSM/STATE_FSM_FFd2" BEL "CONTROLfSM/STATE_FSM_FFd1" BEL
+        "PULSEgEN/i_6" BEL "PULSEgEN/i_5" BEL "PULSEgEN/i_4" BEL
+        "PULSEgEN/i_3" BEL "PULSEgEN/i_2" BEL "PULSEgEN/i_1" BEL
+        "PULSEgEN/i_0" BEL "PULSEgEN/counter_25" BEL "PULSEgEN/counter_24" BEL
+        "PULSEgEN/counter_23" BEL "PULSEgEN/counter_22" BEL
+        "PULSEgEN/counter_21" BEL "PULSEgEN/counter_20" BEL
+        "PULSEgEN/counter_19" BEL "PULSEgEN/counter_18" BEL
+        "PULSEgEN/counter_17" BEL "PULSEgEN/counter_16" BEL
+        "PULSEgEN/counter_15" BEL "PULSEgEN/counter_14" BEL
+        "PULSEgEN/counter_13" BEL "PULSEgEN/counter_12" BEL
+        "PULSEgEN/counter_11" BEL "PULSEgEN/counter_10" BEL
+        "PULSEgEN/counter_9" BEL "PULSEgEN/counter_8" BEL "PULSEgEN/counter_7"
+        BEL "PULSEgEN/counter_6" BEL "PULSEgEN/counter_5" BEL
+        "PULSEgEN/counter_4" BEL "PULSEgEN/counter_3" BEL "PULSEgEN/counter_2"
+        BEL "PULSEgEN/counter_1" BEL "PULSEgEN/counter_0" BEL
+        "PULSEgEN/ONE_MINUTE" BEL "PULSEgEN/HALF_SECOND" BEL
+        "TIMEsET/MINS/MS_3" BEL "TIMEsET/MINS/MS_2" BEL "TIMEsET/MINS/MS_1"
+        BEL "TIMEsET/MINS/MS_0" BEL "TIMEsET/MINS/LS_3" BEL
+        "TIMEsET/MINS/LS_2" BEL "TIMEsET/MINS/LS_1" BEL "TIMEsET/MINS/LS_0"
+        BEL "TIMEsET/HRS/MS_3" BEL "TIMEsET/HRS/MS_2" BEL "TIMEsET/HRS/MS_1"
+        BEL "TIMEsET/HRS/MS_0" BEL "TIMEsET/HRS/LS_3" BEL "TIMEsET/HRS/LS_2"
+        BEL "TIMEsET/HRS/LS_1" BEL "TIMEsET/HRS/LS_0" BEL
+        "ALARMrEGISTER/ALARM_DATA_0_3" BEL "ALARMrEGISTER/ALARM_DATA_0_2" BEL
+        "ALARMrEGISTER/ALARM_DATA_0_1" BEL "ALARMrEGISTER/ALARM_DATA_0_0" BEL
+        "ALARMrEGISTER/ALARM_DATA_1_3" BEL "ALARMrEGISTER/ALARM_DATA_1_2" BEL
+        "ALARMrEGISTER/ALARM_DATA_1_1" BEL "ALARMrEGISTER/ALARM_DATA_1_0" BEL
+        "ALARMrEGISTER/ALARM_DATA_2_3" BEL "ALARMrEGISTER/ALARM_DATA_2_2" BEL
+        "ALARMrEGISTER/ALARM_DATA_2_1" BEL "ALARMrEGISTER/ALARM_DATA_2_0" BEL
+        "ALARMrEGISTER/ALARM_DATA_3_3" BEL "ALARMrEGISTER/ALARM_DATA_3_2" BEL
+        "ALARMrEGISTER/ALARM_DATA_3_1" BEL "ALARMrEGISTER/ALARM_DATA_3_0" BEL
+        "TIMEcOUNT/LS_MIN_3" BEL "TIMEcOUNT/LS_MIN_2" BEL "TIMEcOUNT/LS_MIN_1"
+        BEL "TIMEcOUNT/LS_MIN_0" BEL "TIMEcOUNT/MS_HR_3" BEL
+        "TIMEcOUNT/MS_HR_2" BEL "TIMEcOUNT/MS_HR_1" BEL "TIMEcOUNT/MS_HR_0"
+        BEL "TIMEcOUNT/LS_HR_3" BEL "TIMEcOUNT/LS_HR_2" BEL
+        "TIMEcOUNT/LS_HR_1" BEL "TIMEcOUNT/LS_HR_0" BEL "TIMEcOUNT/MS_MIN_3"
+        BEL "TIMEcOUNT/MS_MIN_2" BEL "TIMEcOUNT/MS_MIN_1" BEL
+        "TIMEcOUNT/MS_MIN_0" BEL "Nexys3A/counter_17" BEL "Nexys3A/counter_16"
+        BEL "Nexys3A/counter_15" BEL "Nexys3A/counter_14" BEL
+        "Nexys3A/counter_13" BEL "Nexys3A/counter_12" BEL "Nexys3A/counter_11"
+        BEL "Nexys3A/counter_10" BEL "Nexys3A/counter_9" BEL
+        "Nexys3A/counter_8" BEL "Nexys3A/counter_7" BEL "Nexys3A/counter_6"
+        BEL "Nexys3A/counter_5" BEL "Nexys3A/counter_4" BEL
+        "Nexys3A/counter_3" BEL "Nexys3A/counter_2" BEL "Nexys3A/counter_1"
+        BEL "Nexys3A/counter_0" BEL "Nexys3A/selector_3" BEL
+        "Nexys3A/selector_2" BEL "Nexys3A/selector_1" BEL "Nexys3A/selector_0"
+        BEL "Nexys3A/a" BEL "Nexys3A/i_26" BEL "Nexys3A/i_25" BEL
+        "Nexys3A/i_24" BEL "Nexys3A/i_23" BEL "Nexys3A/i_22" BEL
+        "Nexys3A/i_21" BEL "Nexys3A/i_20" BEL "Nexys3A/i_19" BEL
+        "Nexys3A/i_18" BEL "Nexys3A/i_17" BEL "Nexys3A/i_16" BEL
+        "Nexys3A/i_15" BEL "Nexys3A/i_14" BEL "Nexys3A/i_13" BEL
+        "Nexys3A/i_12" BEL "Nexys3A/i_11" BEL "Nexys3A/i_10" BEL "Nexys3A/i_9"
+        BEL "Nexys3A/i_8" BEL "Nexys3A/i_7" BEL "Nexys3A/i_6" BEL
+        "Nexys3A/i_5" BEL "Nexys3A/i_4" BEL "Nexys3A/i_3" BEL "Nexys3A/i_2"
+        BEL "Nexys3A/i_1" BEL "Nexys3A/i_0" BEL "CLOCK_BUFGP/BUFG";
+TS_CLOCK = PERIOD TIMEGRP "CLOCK" 10 ns HIGH 50%;
+SCHEMATIC END;
+

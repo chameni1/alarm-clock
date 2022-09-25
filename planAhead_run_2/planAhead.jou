@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6
+# Build 269223 by xbuild on Wed Jun  5 11:17:50 MDT 2013
+# Start of session at: Wed Jan 15 13:48:09 2014
+# Process ID: 1424
+# Log file: D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/planAhead_run_2/planAhead.log
+# Journal file: D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  AL]]
+refresh_design
+startgroup
+set_property package_pin A8 [get_ports AL]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list AL]]
+startgroup
+set_property package_pin T10 [get_ports ALARM_ON]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list ALARM_ON]]
+startgroup
+set_property package_pin V10 [get_ports CLOCK]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list CLOCK]]
+startgroup
+set_property package_pin C4 [get_ports HR]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list HR]]
+startgroup
+set_property package_pin D9 [get_ports MN]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list MN]]
+startgroup
+set_property package_pin B8 [get_ports RESET]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list RESET]]
+startgroup
+set_property package_pin U16 [get_ports SOUND_A]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list SOUND_A]]
+startgroup
+set_property package_pin M13 [get_ports {DISP_8SEG[7]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[7]}]]
+startgroup
+set_property package_pin T17 [get_ports {DISP_8SEG[6]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[6]}]]
+startgroup
+set_property package_pin T18 [get_ports {DISP_8SEG[5]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[5]}]]
+startgroup
+set_property package_pin U17 [get_ports {DISP_8SEG[4]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[4]}]]
+startgroup
+set_property package_pin U18 [get_ports {DISP_8SEG[3]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[3]}]]
+startgroup
+set_property package_pin M14 [get_ports {DISP_8SEG[2]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[2]}]]
+startgroup
+set_property package_pin N14 [get_ports {DISP_8SEG[1]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[1]}]]
+startgroup
+set_property package_pin L14 [get_ports {DISP_8SEG[0]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[0]}]]
+startgroup
+set_property package_pin P17 [get_ports {SEL[3]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {SEL[3]}]]
+startgroup
+set_property package_pin P18 [get_ports {SEL[2]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {SEL[2]}]]
+startgroup
+set_property package_pin N15 [get_ports {SEL[1]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {SEL[1]}]]
+startgroup
+set_property package_pin N16 [get_ports {SEL[0]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {SEL[0]}]]
+set_property is_loc_fixed false [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed true [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed false [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed true [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed false [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed true [get_ports [list  {DISP_8SEG[7]}]]
+save_constraints

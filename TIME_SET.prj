@@ -1,0 +1,4 @@
+vhdl work "p_alarm_types.vhd"
+vhdl work "MINs.vhd"
+vhdl work "HRS.vhd"
+vhdl work "time_set.vhd"

@@ -1,0 +1,182 @@
+
+****** PlanAhead v14.6
+  **** Build 269223 by xbuild on Wed Jun  5 11:17:50 MDT 2013
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/pa.fromHdl.tcl
+# create_project -name alarm_clock -dir "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/planAhead_run_2" -part xc6slx16csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "alarm_clock.ucf" [current_fileset -constrset]
+Adding file 'D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {p_alarm_types.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {bcd2_count.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {time_set.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {time_count.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {pulse_gen.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {nexys3Affich.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ddrv4.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {control.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {alarm_reg4.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {alarm_clock.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top alarm_clock $srcset
+# add_files [list {alarm_clock.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/p_alarm_types.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/bcd2_count.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/time_set.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/time_count.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/pulse_gen.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/nexys3Affich.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/ddrv4.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/control.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_reg4.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.vhd" into library work
+Loading clock regions from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.ucf]
+Finished Parsing UCF File [D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 676244fd
+open_rtl_design: Time (s): elapsed = 00:00:34 . Memory (MB): peak = 465.707 ; gain = 86.301
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  AL]]
+refresh_design
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/p_alarm_types.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/bcd2_count.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/time_set.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/time_count.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/pulse_gen.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/nexys3Affich.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/ddrv4.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/control.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_reg4.vhd" into library work
+Parsing VHDL file "D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.vhd" into library work
+Parsing UCF File [D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.ucf]
+Finished Parsing UCF File [D:/Projets/Enseignement/TPS/APAI/correction_alarm_clock_14.6/alarm_clock/alarm_clock.ucf]
+startgroup
+set_property package_pin A8 [get_ports AL]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list AL]]
+startgroup
+set_property package_pin T10 [get_ports ALARM_ON]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list ALARM_ON]]
+startgroup
+set_property package_pin V10 [get_ports CLOCK]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list CLOCK]]
+startgroup
+set_property package_pin C4 [get_ports HR]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list HR]]
+startgroup
+set_property package_pin D9 [get_ports MN]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list MN]]
+startgroup
+set_property package_pin B8 [get_ports RESET]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list RESET]]
+startgroup
+set_property package_pin U16 [get_ports SOUND_A]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list SOUND_A]]
+startgroup
+set_property package_pin M13 [get_ports {DISP_8SEG[7]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[7]}]]
+startgroup
+set_property package_pin T17 [get_ports {DISP_8SEG[6]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[6]}]]
+startgroup
+set_property package_pin T18 [get_ports {DISP_8SEG[5]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[5]}]]
+startgroup
+set_property package_pin U17 [get_ports {DISP_8SEG[4]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[4]}]]
+startgroup
+set_property package_pin U18 [get_ports {DISP_8SEG[3]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[3]}]]
+startgroup
+set_property package_pin M14 [get_ports {DISP_8SEG[2]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[2]}]]
+startgroup
+set_property package_pin N14 [get_ports {DISP_8SEG[1]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[1]}]]
+startgroup
+set_property package_pin L14 [get_ports {DISP_8SEG[0]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {DISP_8SEG[0]}]]
+startgroup
+set_property package_pin P17 [get_ports {SEL[3]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {SEL[3]}]]
+startgroup
+set_property package_pin P18 [get_ports {SEL[2]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {SEL[2]}]]
+startgroup
+set_property package_pin N15 [get_ports {SEL[1]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {SEL[1]}]]
+startgroup
+set_property package_pin N16 [get_ports {SEL[0]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {SEL[0]}]]
+set_property is_loc_fixed false [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed true [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed false [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed true [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed false [get_ports [list  {DISP_8SEG[7]}]]
+set_property is_loc_fixed true [get_ports [list  {DISP_8SEG[7]}]]
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Jan 15 14:21:51 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead
